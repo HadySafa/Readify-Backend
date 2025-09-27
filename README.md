@@ -116,5 +116,7 @@ The frontend part of this project is in a separate repository. Make sure to [che
 
 ---
 
-![ASP.NET Core](https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg)
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt="ASP.NET Core" width="250"/>
+</p>
 
