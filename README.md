@@ -118,4 +118,7 @@ To ensure the app goes beyond basic CRUD, additional rules were enforced:
 - **User-specific data** is always derived from the authentication token (instead of trusting client-sent IDs).  
 
 ---
+---
+
+![ASP.NET Core](https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg)
 
