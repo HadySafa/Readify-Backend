@@ -3,8 +3,7 @@
 **Readify** is a fully functional, responsive, and user-friendly e-library web application.  
 It is built with **React & TypeScript** on the frontend and **ASP.NET Core** on the backend, connected through REST APIs.
 
----
----
+
 
 ## Project Features
 
@@ -27,7 +26,6 @@ It is built with **React & TypeScript** on the frontend and **ASP.NET Core** on 
 - Track currently borrowed books.  
 - View borrowing history.  
 
----
 
 ### Extra Features
 
@@ -38,7 +36,7 @@ It is built with **React & TypeScript** on the frontend and **ASP.NET Core** on 
   - Overdue books.  
   - Newly added books.  
 
----
+
 
 ### Future Features
 
@@ -46,8 +44,6 @@ It is built with **React & TypeScript** on the frontend and **ASP.NET Core** on 
 - Book reservation system.  
 - Real-time notification updates.  
 
----
----
 
 ## Development Approach
 
@@ -66,15 +62,14 @@ The development of this project was carried out in **7 key phases**:
 I’ve shared a detailed breakdown of these phases in a series of LinkedIn posts.  
 You can start reading from **[Phase 1 here](https://www.linkedin.com/posts/hadyabdallahsafa_fullstackdevelopment-webdevelopment-reactjs-activity-7371797383292284928-HTZk?utm_source=share&utm_medium=member_desktop&rcm=ACoAADy9VLYB3eC6Id_JgPlGzjgt4k6V8fuMstY)**.  
 
----
----
+
 
 ## Backend Architecture & Best Practices
 
 To build this application, I developed around **30 API endpoints** and structured the backend using the **Repository Pattern**.  
 This approach separates **data access** from **business logic**, resulting in organized, maintainable, and testable code.
 
----
+
 
 ###  Project Structure
 - **Controllers** – Handle HTTP requests and responses.  
@@ -85,13 +80,13 @@ This approach separates **data access** from **business logic**, resulting in or
   1. Transfer data between layers (e.g., controller ↔ service).  
   2. Decouple internal models from external representations.  
 
----
+
 
 ### Background Jobs
 - Integrated **Hangfire** to schedule background jobs (outside the main request/response flow).  
 - Example: Notification feature that sends reminders about due dates and overdue books.
 
----
+
 
 ### Business Logic Highlights
 To ensure the app goes beyond basic CRUD, additional rules were enforced:  
@@ -99,7 +94,6 @@ To ensure the app goes beyond basic CRUD, additional rules were enforced:
 - A user cannot borrow a book that is **already borrowed**.  
 - Book copies cannot be updated to a number lower than the **currently borrowed copies**.  
 
----
 
 ### Error Handling
 
@@ -108,7 +102,6 @@ To ensure the app goes beyond basic CRUD, additional rules were enforced:
 - Ensured **consistent response formats** for errors and successes.  
 - Users are always notified about the **success or failure** of their requests.  
 
----
 
 ### Security Best Practices
 - **Password hashing** for secure credential storage.  
@@ -117,8 +110,7 @@ To ensure the app goes beyond basic CRUD, additional rules were enforced:
 - **Parameterized queries** to prevent SQL injection.  
 - **User-specific data** is always derived from the authentication token (instead of trusting client-sent IDs).  
 
----
----
+
 
 ![ASP.NET Core](https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg)
 
