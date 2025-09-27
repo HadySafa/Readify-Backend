@@ -112,7 +112,7 @@ To ensure the app goes beyond basic CRUD, additional rules were enforced:
 
 ## Note
 
-The frontend part of this project is in a separate repository. Make sure to ![check it out here](https://github.com/hadysafa/readify) for the complete application.
+The frontend part of this project is in a separate repository. Make sure to [check it out here](https://github.com/hadysafa/readify) for the complete application.
 
 ---
 
