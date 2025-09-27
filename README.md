@@ -110,7 +110,11 @@ To ensure the app goes beyond basic CRUD, additional rules were enforced:
 - **Parameterized queries** to prevent SQL injection.  
 - **User-specific data** is always derived from the authentication token (instead of trusting client-sent IDs).  
 
+## Note
 
+The frontend part of this project is in a separate repository. Make sure to ![check it out here](https://github.com/hadysafa/readify) for the complete application.
+
+---
 
 ![ASP.NET Core](https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg)
 
