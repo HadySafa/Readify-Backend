@@ -86,6 +86,11 @@ This approach separates **data access** from **business logic**, resulting in or
 - Integrated **Hangfire** to schedule background jobs (outside the main request/response flow).  
 - Example: Notification feature that sends reminders about due dates and overdue books.
 
+### Data Integrity
+
+- Implemented database transactions in the borrowing feature to ensure atomic operations where borrowing records and available copies update always succeed or fail together.
+
+
 
 
 ### Business Logic Highlights
