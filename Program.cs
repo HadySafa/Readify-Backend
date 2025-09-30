@@ -87,7 +87,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// added by ChatGPT: use CORS
+// use CORS
 app.UseCors("AllowFrontend");
 
 // Apply CORS defined - Added
@@ -109,7 +109,7 @@ using (var scope = app.Services.CreateScope())
     RecurringJob.AddOrUpdate<BookBorrowingDueDateJob>(
     "track-due-dates",
     job => job.TrackDueDates(),
-    "0 30 7 * * *"
+    "0 55 6 * * *"
     );
 }
 

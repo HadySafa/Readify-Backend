@@ -188,8 +188,8 @@ namespace e_library.Repositories
                     {
                         // Insert into Borrowings
                         var insertSql = @"
-                            INSERT INTO borrowings (user_id, book_id, borrowed_at, due_date)
-                            VALUES (@UserId, @BookId, @BorrowedAt, @DueDate);";
+                            INSERT INTO borrowings (user_id, book_id, borrowed_at, due_date, returned_at)
+                            VALUES (@UserId, @BookId, @BorrowedAt, @DueDate, null);";
 
                         await conn.ExecuteAsync(insertSql, new
                         {
